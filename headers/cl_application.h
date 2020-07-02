@@ -1,13 +1,15 @@
-#pragma once
-#include "cl_console_explorrer.h"
-#include "cl_worker.h"
+#ifndef CL_APPLICATION_H
+#define CL_APPLICATION_H
 
 class application {
 
-
 public:
 
-    application();
+    application(); // creating system
+
+    int exec_app(); // executing our app
 
     ~application();
 };
+
+#endif 
