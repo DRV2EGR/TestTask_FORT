@@ -1,7 +1,14 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <stdlib.h>
+#include <sys/ioctl.h>
 using namespace std;
+
+struct position {
+public:
+    std::string name;
+};
 
 #include "headers/cl_console_explorrer.h"
 #include "headers/cl_worker.h"
@@ -9,9 +16,9 @@ using namespace std;
 
 int main()
 {
-    //application* ob_application = new application();
+    application ob_application;
 
-    //int st = ob_application->exec_app();
+    int st = ob_application.exec_app();
 
-    return EXIT_SUCCESS; //st;
+    return st; 
 }

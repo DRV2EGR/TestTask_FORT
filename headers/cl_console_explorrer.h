@@ -5,9 +5,15 @@ class console_explorrer {
 
 public:
     
-    void write_positions_list();
+    void write_positions_list(vector <position>& list);
 
-    string read_new_position(); // returns name position
+    string read_new_symbols(); // returns name position
+
+    void err_inp();
+    int inp_nomber();
+    int get_operation();
 };
+
+#include "../cl_console_explorrer.cpp"
 
 #endif 

@@ -1,15 +1,17 @@
 #ifndef CL_APPLICATION_H
 #define CL_APPLICATION_H
 
-class application {
+class application : public console_explorrer {
 
 public:
 
-    application(); // creating system
+    //application(); // creating system
 
     int exec_app(); // executing our app
 
-    ~application();
+    //~application();
 };
+
+#include "../cl_application.cpp"
 
 #endif 

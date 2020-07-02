@@ -3,15 +3,18 @@
 
 class worker : public console_explorrer {
 private:
-    vector <string> positions;
+    //vector <position> positions;
 
 public:
+    vector <position> positions;
 
-    void add_position(int nom_positions, string name_addable);
-    void remove_position(int nom_positions, string name_removable);
+    bool add_position();
+    void remove_position();
 
     void show_list_of_positions();
     void search_for_position(string name_searchable);
 };
+
+#include "../cl_worker.cpp"
 
 #endif 
