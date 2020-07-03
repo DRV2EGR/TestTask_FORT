@@ -12,6 +12,10 @@ public:
     void err_inp();
     int inp_nomber();
     int get_operation();
+    void rem_err();
+
+    void finded_position(std::string name_finded, vector <int>& po);
+    void not_finded_position(std::string name_finded);
 };
 
 #include "../cl_console_explorrer.cpp"

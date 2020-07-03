@@ -6,10 +6,9 @@ class application : public console_explorrer {
 public:
 
     //application(); // creating system
-
     int exec_app(); // executing our app
-
     //~application();
+    
 };
 
 #include "../cl_application.cpp"

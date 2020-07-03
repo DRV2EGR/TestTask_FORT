@@ -1,8 +1,14 @@
 #include <iostream>
 #include <vector>
+#include <fstream>
 #include <string>
 #include <stdlib.h>
 #include <sys/ioctl.h>
+
+#include "pugixml/pugixml.hpp"
+#include "pugixml/pugixml.cpp"
+#include "pugixml/pugiconfig.hpp"
+
 using namespace std;
 
 struct position {

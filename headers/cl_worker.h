@@ -12,7 +12,10 @@ public:
     void remove_position();
 
     void show_list_of_positions();
-    void search_for_position(string name_searchable);
+    void search_for_position();
+
+    void load_data();
+    void save_data();
 };
 
 #include "../cl_worker.cpp"

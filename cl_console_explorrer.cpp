@@ -19,7 +19,10 @@ void console_explorrer::write_positions_list(vector <position> & list)
     std::cout << "LIST OF POSITIONS: ";
 
     for(int i = 0; i < list.size(); ++i) {
-        std::cout << list[i].name << " ";
+        std::cout << list[i].name;
+
+        if (i == (list.size()-1) ) { std::cout <<  "." << std::endl; }
+        else { std::cout << ", "; }
     }
 
     std::cout << endl;
@@ -62,4 +65,27 @@ int console_explorrer::get_operation()
         err_inp();
         return -1;
     }
+}
+
+void console_explorrer::rem_err()
+{
+    std::cout << "Position wasn't deleted!" << endl;
+}
+
+void console_explorrer::finded_position(std::string name_finded, std::vector <int>& po)
+{
+    std::cout << "Position " << name_finded << " finded at place(s): ";
+    for (int i = 0; i < po.size(); ++i) { 
+
+        if (i == (po.size()-1) ) { std::cout << po[i] << "." << std::endl; }
+        else { std::cout << po[i] << ", "; }
+
+    }
+
+    std::cout << "\n" << std::endl;
+}
+
+void console_explorrer::not_finded_position(std::string name_finded)
+{
+    std::cout << "Position " << name_finded << " didn't finded.\n" << std::endl;
 }
