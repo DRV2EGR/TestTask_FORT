@@ -10,8 +10,30 @@ void console_explorrer::err_inp()
 int console_explorrer::inp_nomber()
 {
     cout << "Input nomber of positions: " << std::endl;
-    int nom; std::cin >> nom;
-    return nom;
+    string nom; 
+
+    for (;;) {
+        std::cin.ignore(32767,'\n');
+        std::cin >> nom; 
+
+        bool f = true;
+        for (int i = 0; i < nom.size(); ++i) {
+            if (nom.at(i) != '0' && nom.at(i) != '1' && nom.at(i) != '2' && 
+            nom.at(i) != '3' && nom.at(i) != '4' && nom.at(i) != '5' && 
+            nom.at(i) != '6' && nom.at(i) != '7' && nom.at(i) != '8' && 
+            nom.at(i) != '9') { f = false; }
+        }
+
+        if (f) { 
+            std::cin.ignore(32767,'\n');
+            break;
+        }
+
+        err_inp();
+    }
+    
+    int ret = atof(nom.c_str());
+    return ret;
 }
 
 void console_explorrer::write_positions_list(vector <position> & list)

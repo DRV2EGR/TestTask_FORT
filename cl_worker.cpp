@@ -28,10 +28,13 @@ void worker::remove_position()
         else {
             bool f = false;
             for (int j = 0; j < positions.size(); ++j) {
-                if (positions[j].name == name_removable) {
-                    positions.erase(positions.begin() + j); f = true;
+                for (int k = 0; k < positions.size(); ++k) {
+                    if (positions[j].name == name_removable) {
+                        positions.erase(positions.begin() + j); f = true;
+                    }
                 }
             }
+            
             if (!f) {
                 rem_err();
             }
