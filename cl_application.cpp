@@ -4,15 +4,22 @@
 
 }*/
 
+/**
+ * @brief Main application method
+ * 
+ * Iterating while user will not exit,
+ * offers all actionf of program
+ * 
+ */
 int application::exec_app()
 {
     worker wor;
-    struct winsize sz;
-
     wor.load_data();
 
+    struct winsize sz;
+
     // clear screen
-    for (int k = 0; k < sz.ws_row; ++k) { cout  << "\n"; }
+    clear_screen(sz);
 
     for (;;) {
         
@@ -20,38 +27,31 @@ int application::exec_app()
         int oper = get_operation();
         
         if (oper == 1) {
-            // clear screen
-            for (int k = 0; k < sz.ws_row; ++k) { cout  << "\n"; }
-            
-            wor.add_position();
 
-            for (int k = 0; k < sz.ws_row; ++k) { cout  << "\n"; }
+            clear_screen(sz);
+            wor.add_position();
+            clear_screen(sz);
 
         } else if (oper == 2) {
-            // clear screen
-            for (int k = 0; k < sz.ws_row; ++k) { cout  << "\n"; }
-        
+           
+            clear_screen(sz);
             wor.remove_position();
             
-
         } else if (oper == 3) {
-            // clear screen
-            for (int k = 0; k < sz.ws_row; ++k) { cout  << "\n"; }
             
+            clear_screen(sz);
             wor.show_list_of_positions();
             
         } else if (oper == 4) {
-            // clear screen
-            for (int k = 0; k < sz.ws_row; ++k) { cout  << "\n"; }
 
+            clear_screen(sz);
             wor.search_for_position();
 
         } else if (oper == 0) {
             break;
         } else {
-            // clear screen
-            for (int k = 0; k < sz.ws_row; ++k) { cout  << "\n"; }
 
+            clear_screen(sz);
             err_inp();
         }
 
@@ -59,8 +59,6 @@ int application::exec_app()
     }
 
     wor.save_data();
-    
-    return 0;
 }
 
 /*~application()

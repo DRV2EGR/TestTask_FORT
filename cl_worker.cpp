@@ -1,5 +1,11 @@
 //#include "headers/cl_worker.h"
 
+/**
+ * @brief Adding position
+ * 
+ * Adding new position
+ * to last place
+ */
 bool worker::add_position()
 {
     int nom_positions = inp_nomber();
@@ -17,6 +23,12 @@ bool worker::add_position()
     return true;
 }
 
+/**
+ * @brief Removing position
+ * 
+ * Remove all positions with
+ * current identificator(name)
+ */
 void worker::remove_position()
 {
     int nom_positions = inp_nomber();
@@ -34,7 +46,7 @@ void worker::remove_position()
                     }
                 }
             }
-            
+
             if (!f) {
                 rem_err();
             }
@@ -42,11 +54,23 @@ void worker::remove_position()
     }
 }
 
+/**
+ * @brief Showing list of all positions
+ *
+ * @see write_positions_list
+ */
 void worker::show_list_of_positions()
 {
     write_positions_list(positions);
 }
 
+/**
+ * @brief Searches needed position
+ * 
+ * Inputing via method string
+ * and search for this identificator
+ * in positions list
+ */
 void worker::search_for_position()
 {
     int nom_positions = inp_nomber();
@@ -65,6 +89,11 @@ void worker::search_for_position()
     }
 }
 
+/**
+ * @brief Loading data
+ *
+ * Loading data from storage to program
+ */
 void worker::load_data()
 {
     pugi::xml_document doc;
@@ -92,6 +121,14 @@ void worker::load_data()
     }
 }
 
+/**
+ * @brief Saving data
+ *
+ * Saves position to storage
+ * when user exiting
+ * 
+ * @todo New alghoritm. Not to save all, but only changed.
+ */
 void worker::save_data()
 {
     string _doc = "<xml>"

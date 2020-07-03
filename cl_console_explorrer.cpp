@@ -1,12 +1,25 @@
 //#include "headers/cl_console_worker.h"
 
-
+/**
+ * @brief Input error
+ * 
+ * Prints error message
+ * when it need
+ *
+ */
 void console_explorrer::err_inp()
 {
     std::cout << "Something went wrong!\n" 
                         << "Please, try again!" << std::endl;
 }
 
+/**
+ * @brief Input Nomber
+ * 
+ * Imputs one integer nomber
+ * 
+ * @return Inputted nomber
+ */
 int console_explorrer::inp_nomber()
 {
     cout << "Input nomber of positions: " << std::endl;
@@ -36,6 +49,14 @@ int console_explorrer::inp_nomber()
     return ret;
 }
 
+/**
+ * @brief Printing all positions
+ * 
+ * Printing list of all positions
+ * 
+ * @param list List of positions
+ * 
+ */
 void console_explorrer::write_positions_list(vector <position> & list)
 {
     std::cout << "LIST OF POSITIONS: ";
@@ -50,6 +71,15 @@ void console_explorrer::write_positions_list(vector <position> & list)
     std::cout << endl;
 }
 
+/**
+ * @brief Imput string.
+ * 
+ * Reading string from console
+ * 
+ * @warning Don't secured from user not correct input
+ *
+ * @todo Security from user not correct input
+ */
 string console_explorrer::read_new_symbols()
 {
     cout << "Waiting input. To cancel or exit input ~!" << endl;
@@ -61,6 +91,17 @@ string console_explorrer::read_new_symbols()
     
 }
 
+/**
+ * @brief Imput one operation.
+ * 
+ * Reading string from console
+ * whith is user operation
+ * which program should do
+ * 
+ * @warning Don't secured from user not correct input
+ *
+ * @todo Security from user not correct input
+ */
 int console_explorrer::get_operation()
 {
     std::cout << "Please, input command from list bellow:\n"
@@ -89,11 +130,26 @@ int console_explorrer::get_operation()
     }
 }
 
+/**
+ * @brief Error message from remove
+ * 
+ * If we can't remove positions
+ * this method will notice user
+ */
 void console_explorrer::rem_err()
 {
     std::cout << "Position wasn't deleted!" << endl;
 }
 
+/**
+ * @brief Finded position
+ * 
+ * Printing list of places, where position
+ * was finded and position description
+ *
+ * @param name_finded Name of finded position
+ * @param po Places of finded position
+ */
 void console_explorrer::finded_position(std::string name_finded, std::vector <int>& po)
 {
     std::cout << "Position " << name_finded << " finded at place(s): ";
@@ -107,7 +163,24 @@ void console_explorrer::finded_position(std::string name_finded, std::vector <in
     std::cout << "\n" << std::endl;
 }
 
+/**
+ * @brief Not finded position
+ * 
+ * Printing message if
+ * we don't find such position
+ *
+ * @param name_finded Name of not finded position
+ */
 void console_explorrer::not_finded_position(std::string name_finded)
 {
     std::cout << "Position " << name_finded << " didn't finded.\n" << std::endl;
+}
+
+/**
+ * @brief Clearing screen
+ */
+void console_explorrer::clear_screen(winsize _sz)
+{
+    cout << _sz.ws_row;
+    for (int k = 0; k < _sz.ws_row; ++k) { std::cout << "\n"; }
 }

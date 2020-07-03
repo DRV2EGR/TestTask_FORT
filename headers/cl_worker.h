@@ -1,6 +1,17 @@
 #ifndef CL_WORKER_H
 #define CL_WORKER_H
 
+/**
+ * @class worker
+ * @brief Doing main operations with data
+ * 
+ * Class with methods, whitch
+ * that work with all data, 
+ * performing the necessary operations
+ *
+ * @param positions Vector with all our abstract positions
+ * @param position Description of our abstract position
+ */
 class worker : public console_explorrer {
 private:
     //vector <position> positions;
