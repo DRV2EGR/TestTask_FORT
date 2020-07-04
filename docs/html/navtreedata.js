@@ -6,14 +6,14 @@ var NAVTREE =
       [ "Installation", "index.html#install_sec", [
         [ "  Step 1: Download source code", "index.html#step1", null ],
         [ "  Step 2: Unzip source code", "index.html#step2", null ],
-        [ "  Step 3: Compile source code with CMake from libruary make.", "index.html#step3", [
-          [ "    Step 3.1 In terminal open <path to lib>/build/", "index.html#step4", null ],
-          [ "    Step 3.2 In terminal cmake <path to lib>/build/", "index.html#step5", null ],
-          [ "    Step 3.3 In terminal make", "index.html#step6", null ],
-          [ "    Step 3.4 In terminal ./main (for linux) or main.exe (for Windows)", "index.html#step7", null ]
+        [ "  Step 3: Go to /build directory", "index.html#step3", [
+          [ "    Step 3.1 In terminal cmake <special keys eg. compiler settings> <path to dest florder>", "index.html#step4", null ],
+          [ "    Step 3.2 In terminal make", "index.html#step5", null ],
+          [ "    Step 3.3 Run compiled file!", "index.html#step7", null ]
         ] ]
       ] ]
     ] ],
+    [ "Test task for FORT company", "md__home_dmitry__xD0_x94_xD0_xBE_xD0_xBA_xD1_x83_xD0_xBC_xD0_xB5_xD0_xBD_xD1_x82_xD1_x8B_test_task_README.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
