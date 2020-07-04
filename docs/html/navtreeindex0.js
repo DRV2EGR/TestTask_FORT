@@ -40,7 +40,7 @@ var NAVTREEINDEX0 =
 "index.html#step3":[0,1,2],
 "index.html#step4":[0,1,2,0],
 "index.html#step5":[0,1,2,1],
-"index.html#step7":[0,1,2,2],
+"index.html#step6":[0,1,2,2],
 "mainpage_8h_source.html":[4,0,1],
 "md__home_dmitry__xD0_x94_xD0_xBE_xD0_xBA_xD1_x83_xD0_xBC_xD0_xB5_xD0_xBD_xD1_x82_xD1_x8B_test_task_README.html":[1],
 "pages.html":[],
