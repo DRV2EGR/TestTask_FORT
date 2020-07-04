@@ -2,6 +2,10 @@ cmake_minimum_required (VERSION 2.6)
 
 set (PROJECT main)
 
+IF (WIN32)
+	add_definitions(-DWINDOWS=1)
+ENDIF()
+
 project (${PROJECT})
 
 include_directories (../libs)
@@ -18,10 +22,6 @@ set (SOURCES ../src/main.cpp)
 
 source_group ("Header Files" FILES ${HEADERS})
 source_group ("Source Files" FILES ${SOURCES})
-
-IF (WIN32)
-	add_definitions(-WINDOWS)
-ENDIF()
 
 add_executable (${PROJECT} ${HEADERS} ${SOURCES})
 
