@@ -16,10 +16,8 @@ int application::exec_app()
     worker wor;
     wor.load_data();
 
-    struct winsize sz;
-
     // clear screen
-    clear_screen(sz);
+    clear_screen();
 
     for (;;) {
         
@@ -28,30 +26,30 @@ int application::exec_app()
         
         if (oper == 1) {
 
-            clear_screen(sz);
+            clear_screen();
             wor.add_position();
-            clear_screen(sz);
+            clear_screen();
 
         } else if (oper == 2) {
            
-            clear_screen(sz);
+            clear_screen();
             wor.remove_position();
             
         } else if (oper == 3) {
             
-            clear_screen(sz);
+            clear_screen();
             wor.show_list_of_positions();
             
         } else if (oper == 4) {
 
-            clear_screen(sz);
+            clear_screen();
             wor.search_for_position();
 
         } else if (oper == 0) {
             break;
         } else {
 
-            clear_screen(sz);
+            clear_screen();
             err_inp();
         }
 

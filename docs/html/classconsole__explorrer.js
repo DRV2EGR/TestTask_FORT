@@ -1,6 +1,6 @@
 var classconsole__explorrer =
 [
-    [ "clear_screen", "classconsole__explorrer.html#a71db13da667312cf47a3fc924c77fe8a", null ],
+    [ "clear_screen", "classconsole__explorrer.html#a6d32e0f71664a041815510b10fb18783", null ],
     [ "err_inp", "classconsole__explorrer.html#a4878037ae1de16be4589e1b3ec3eeb39", null ],
     [ "finded_position", "classconsole__explorrer.html#a70f2e7e122ad71ebe886a706185ba92d", null ],
     [ "get_operation", "classconsole__explorrer.html#a9ffb769dac30807cfc92864ee92f30ea", null ],

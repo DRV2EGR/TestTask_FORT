@@ -4,18 +4,17 @@ set (PROJECT main)
 
 project (${PROJECT})
 
-include_directories (../headers)
+include_directories (../libs)
+include_directories (../src)
 
-if (MSVC)
-	add_definitions (/W4)
-elseif (CMAKE_COMPILER_IS_GNUCXX)
+if (CMAKE_COMPILER_IS_GNUCXX)
 	add_definitions (-Wall -pedantic)
 else ()
 	message ("Unknown compiler")
 endif ()
 
 set (HEADERS)
-set (SOURCES ../main.cpp)
+set (SOURCES ../src/main.cpp)
 
 source_group ("Header Files" FILES ${HEADERS})
 source_group ("Source Files" FILES ${SOURCES})

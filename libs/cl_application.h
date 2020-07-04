@@ -17,6 +17,6 @@ public:
     
 };
 
-#include "../cl_application.cpp"
+#include "../src/cl_application.cpp"
 
 #endif 

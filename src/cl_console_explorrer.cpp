@@ -179,8 +179,12 @@ void console_explorrer::not_finded_position(std::string name_finded)
 /**
  * @brief Clearing screen
  */
-void console_explorrer::clear_screen(winsize _sz)
+void console_explorrer::clear_screen()
 {
-    cout << _sz.ws_row;
-    for (int k = 0; k < _sz.ws_row; ++k) { std::cout << "\n"; }
+    #ifdef WINDOWS
+        std::system("cls");
+    #else
+        // Assume POSIX
+        std::system ("clear");
+    #endif
 }

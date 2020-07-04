@@ -29,6 +29,6 @@ public:
     void save_data();
 };
 
-#include "../cl_worker.cpp"
+#include "../src/cl_worker.cpp"
 
 #endif 

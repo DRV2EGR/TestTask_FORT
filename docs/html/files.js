@@ -1,6 +1,5 @@
 var files =
 [
-    [ "headers", "dir_7f57b1e41c5acd0e859ae5f3a2b075a9.html", "dir_7f57b1e41c5acd0e859ae5f3a2b075a9" ],
-    [ "pugixml", "dir_1274f81bcb4e3fc4bb47f4bc78dbb8f5.html", "dir_1274f81bcb4e3fc4bb47f4bc78dbb8f5" ],
+    [ "libs", "dir_6719ab1f1f7655efc2fa43f7eb574fd1.html", "dir_6719ab1f1f7655efc2fa43f7eb574fd1" ],
     [ "mainpage.h", "mainpage_8h_source.html", null ]
 ];

@@ -24,9 +24,9 @@ public:
     void finded_position(std::string name_finded, vector <int>& po);
     void not_finded_position(std::string name_finded);
 
-    void clear_screen(winsize _sz);
+    void clear_screen();
 };
 
-#include "../cl_console_explorrer.cpp"
+#include "../src/cl_console_explorrer.cpp"
 
 #endif 

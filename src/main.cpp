@@ -3,11 +3,12 @@
 #include <fstream>
 #include <string>
 #include <stdlib.h>
-#include <sys/ioctl.h>
+//#include <sys/ioctl.h>
+#include <cstdlib>
 
-#include "pugixml/pugixml.hpp"
-#include "pugixml/pugixml.cpp"
-#include "pugixml/pugiconfig.hpp"
+#include "../libs/pugixml/pugixml.hpp"
+#include "../libs/pugixml/pugixml.cpp"
+#include "../libs/pugixml/pugiconfig.hpp"
 
 using namespace std;
 
@@ -16,9 +17,9 @@ public:
     std::string name;
 };
 
-#include "headers/cl_console_explorrer.h"
-#include "headers/cl_worker.h"
-#include "headers/cl_application.h"
+#include "../libs/cl_console_explorrer.h"
+#include "../libs/cl_worker.h"
+#include "../libs/cl_application.h"
 
 
 /**
