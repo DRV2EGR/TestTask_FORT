@@ -1,3 +1,0 @@
-/home/dmitry/Документы/test_task/build/CMakeFiles/rebuild_cache.dir
-/home/dmitry/Документы/test_task/build/CMakeFiles/main.dir
-/home/dmitry/Документы/test_task/build/CMakeFiles/edit_cache.dir
