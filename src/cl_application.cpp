@@ -11,7 +11,7 @@
  * offers all actionf of program
  * 
  */
-int application::exec_app()
+void application::exec_app()
 {
     worker wor;
     wor.load_data();

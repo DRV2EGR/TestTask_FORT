@@ -12,7 +12,7 @@ class application : public console_explorrer {
 public:
 
     //application(); // creating system
-    int exec_app(); // executing our app
+    void exec_app(); // executing our app
     //~application();
     
 };
