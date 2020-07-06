@@ -12,7 +12,7 @@ include_directories (../libs)
 include_directories (../src)
 
 if (CMAKE_COMPILER_IS_GNUCXX)
-	add_definitions (-Wall -pedantic -std=c++17)
+	add_definitions (-Wall -pedantic)
 else ()
 	message ("Unknown compiler")
 endif ()
